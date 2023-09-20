@@ -1,0 +1,45 @@
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label, input, select {
+    /* display: block; */
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  #result-container {
+    margin: 20px auto;
+    width: 300px;
+  }
+
+  .lineChart{
+    margin: 20px auto;
+    width: 70%;
+  }
+
+  #submitButtonWeekView, #submitButtonCustomView {
+    background-color: #2f4256; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 7px 10px; 
+    margin: 10px;
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 14px; /* Font size */
+  }
+  #submitButtonWeekView:hover, #submitButtonCustomView:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+  }
+  

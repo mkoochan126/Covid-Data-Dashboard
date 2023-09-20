@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID Data Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>COVID Data Application</h1>
+
+  <select id="displayView" required>
+    <option value="view1">Arizona State Covid Week Data</option>
+    <option value="view2">Custom Covid Data of different states</option>
+  </select>
+
+  <div id="form1" class="form-container">
+    <label for="currentDate"> Current Date </label>
+    <input type="text" id="currentDate" placeholder="Current date" value="2021-03-07" required>
+
+    <button id="submitButtonWeekView">Fetch</button>
+  </div>
+
+  <div id="form2" class="form-container">
+    <label for="state">Select State</label>
+    <select id="state" required>
+      <option value="Arizona">Arizona</option>
+    </select>
+
+    <label for="startDate">Start Date</label>
+    <input type="text" id="startDate" placeholder="Start date" value="2021-02-07" required>
+
+    <label for="endDate">End Date</label>
+    <input type="text" id="endDate" placeholder="End date" value="2021-02-17" required>
+
+    <button id="submitButtonCustomView">Fetch</button>  
+  </div>
+
+  <div class="lineChart">
+    <canvas id="arizonaChart" ></canvas>
+    <canvas id="customChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
+</html>
