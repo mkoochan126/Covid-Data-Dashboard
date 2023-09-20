@@ -8,8 +8,6 @@ Welcome to the COVID-19 Data Application! This web application allows you to fet
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -22,7 +20,6 @@ Before you begin, ensure you have met the following requirements:
 - Java Development Kit (JDK)
 - Maven
 - Node.js and npm
-- Angular CLI (if you plan to make changes to the frontend)
 - Git (optional)
 
 After installing all these, open the code in VSCode and run the application.
